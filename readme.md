@@ -1,7 +1,7 @@
 # 1.this project is neceserry to work at venv(virturlenv)/mysite/</br>
 
 # 2.MySQL
-2.1 must run "CREATE DATABASE sb;" in *mysql command line* before run the server</br>
+2.1 must run "CREATE DATABASE ***sb***;" in *mysql command line* before run the server</br>
 2.2
 * 在models.py中修改模型
 * 运行python manage.py makemigrations为改动创建迁移记录
