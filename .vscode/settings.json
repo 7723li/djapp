@@ -1,6 +1,0 @@
-{
-    "python.pythonPath": "../bin",
-    "python.linting.pylintArgs": [
-        "--load-plugins=pylint_django"
-    ],
-}

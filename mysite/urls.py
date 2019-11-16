@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+# ROOT_URLCONF
 urlpatterns = [
     path('control/', admin.site.urls),
     path('polls/', include('polls.urls'))
