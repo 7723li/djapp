@@ -26,3 +26,4 @@
 
 [Part 1：请求与响应](http://www.liujiangblog.com/course/django/87)
 [Part 2：模型与后台](http://www.liujiangblog.com/course/django/88)
+[Part 3：视图和模板](http://www.liujiangblog.com/course/django/89)
