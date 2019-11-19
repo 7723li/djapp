@@ -10,7 +10,10 @@ class Question(models.Model):
         return self.question_text
 
     def was_published_recently(self):
-        return self.pub_date >= timezone.now() - datetime.timedelta(days = 1)
+        # 发布时间 >= 当前时间 - 当前的一天之前 (具体到毫秒)
+        now = timezone.now()
+        # 最迟发布时间 不应该超过现在
+        return now - datetime.timedelta(days = 1) <= self.pub_date <= now
 
     question_text = models.CharField(max_length = 256)  # 问题描述
     pub_date = models.DateTimeField('date published')   # 问题时间
