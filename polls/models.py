@@ -15,6 +15,11 @@ class Question(models.Model):
         # 最迟发布时间 不应该超过现在
         return now - datetime.timedelta(days = 1) <= self.pub_date <= now
 
+    # 管理界面 添加可以根据"是否最近发布"进行排序的属性
+    was_published_recently.admin_order_field = 'pub_date'
+    was_published_recently.boolean = True
+    was_published_recently.short_description = 'Published Recently'
+
     question_text = models.CharField(max_length = 256)  # 问题描述
     pub_date = models.DateTimeField('date published')   # 问题时间
 

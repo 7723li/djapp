@@ -24,7 +24,12 @@
         例：本项目 只需要使用*polls/index.html*就可以引用到*polls/templates/polls/index.html*
         *实际上没有这么干 不然名称太乱*
 
+# 4.static
+* settings.py -> STATIC_URL = '/static/' -> 资源
+
 [Part 1：请求与响应](http://www.liujiangblog.com/course/django/87)
 [Part 2：模型与后台](http://www.liujiangblog.com/course/django/88)
 [Part 3：视图和模板](http://www.liujiangblog.com/course/django/89)
 [Part 4：表单和类视图](http://www.liujiangblog.com/course/django/90)
+[Part 5：测试](http://www.liujiangblog.com/course/django/91)
+[Part 6：静态文件](http://www.liujiangblog.com/course/django/92)
